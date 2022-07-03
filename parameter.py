@@ -26,7 +26,7 @@ f_21=0.96 #oscillator strenght doped well
 E_LO=36 #meV Phonon energy for GaAs
 t_dephasing= 0.1 #dephasing time parameter in ps 
 Delta_sep=6.76 #[meV] Tunneling coupling between levels 2 and 3. Calculated separately.
-
+Patch_antenna=5.5 #absorption enhancement due to the patch-antenna metamaterial (see references)
 #%%
 '''
 #INPUT: Energies vs Electric field for every levels, 
