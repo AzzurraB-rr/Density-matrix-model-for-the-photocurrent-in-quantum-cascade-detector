@@ -61,8 +61,8 @@ for t in range(T_size):
     for k in range(n):
         for e in range(En):                
             j[t][k,e]=np.real(-n_d*e_C*1j*U[k,e]*Coherences[t][k,e]*1e12) #[A cm^-2] current density for every levels
-            J[t][k,e]=(j[t][k,e][5,0]+j[t][k,e][6,0] +j[t][k,e][9,0])     #total photocurrent from levels with non zero coherences
-            Signal[t][k]=np.amax(J[t][k,:])  #maximum photocurrent at spectral peak
+            J[t][k,e]=(j[t][k,e][5,0]+j[t][k,e][6,0] +j[t][k,e][9,0])*Patch_antenna     #total photocurrent from levels with non zero coherences
+            Signal[t][k]=np.amax(J[t][k,:])*Patch_antenna  #maximum photocurrent at spectral peak
             
 #Plot
  
